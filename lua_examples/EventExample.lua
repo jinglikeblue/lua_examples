@@ -33,7 +33,7 @@ local ed1 = EventDispatcher:new()
 local ed2 = EventDispatcher:new()
 
 ed1:AddEventListener(self, "hello", OnHelloEd1, "world")
-ed1:AddEventListener("hello", OnHelloEd1, "world1")
+ed1:AddEventListener(obj, "hello", obj.OnObj1, "world1")
 ed1:AddEventListener(obj, "hello", obj.OnObj1, "asdfasdfassdfasdf")
 
 -- print(self)
